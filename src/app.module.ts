@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { DatabaseModule } from './database/database.module';
 import { appEnvironment, appEnvironmentValidate } from './env';
 import { ModulesModule } from './modules/modules.module';
+import { CommonModule } from './common/common.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { ModulesModule } from './modules/modules.module';
     }),
     DatabaseModule,
     ModulesModule,
+    CommonModule,
   ],
   controllers: [AppController],
   providers: [AppService],
